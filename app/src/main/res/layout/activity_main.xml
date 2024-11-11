@@ -1,0 +1,70 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextNumberOfElements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wprowadź liczbę elementów"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonSortBubble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009c4a"
+            android:text="Bubble sort" />
+
+        <Button
+            android:id="@+id/buttonSortInsertion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009c4a"
+            android:text="Insertion Sort" />
+
+        <Button
+            android:id="@+id/buttonSortSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009c4a"
+            android:text="Selection Sort" />
+
+        <Button
+            android:id="@+id/buttonSortQuick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009c4a"
+            android:text="Quick Sort" />
+
+        <Button
+            android:id="@+id/buttonSortMerge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009c4a"
+            android:text="Merge Sort" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressTint="#0b4727"
+            android:max="100"
+            android:progress="0" />
+
+        <com.example.asynctask_sortowanie2.CustomView
+            android:id="@+id/sortingView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
